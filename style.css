@@ -27,6 +27,18 @@
     box-sizing: border-box;
 }
 
+#bell {
+    fill: #ff2a6d;
+    height: 10%;
+    width: 10%;
+}
+
+#mag-glass {
+    fill: #ff2a6d;
+    height: 30%;
+    width: 30%;
+}
+
 .container {
     height: 100vh;
 
@@ -54,6 +66,12 @@
     display: flex;
     flex: 1;
     justify-content: space-between;
+}
+
+.header .search-bar .search-bar-right {
+    display: flex;
+    justify-content: right;
+    align-items: center;
 }
 
 .header .search-bar input {
@@ -143,7 +161,7 @@
 
     grid-row: 2/3;
     display: grid;
-    grid-template: 3fr 3fr / repeat(auto-fit, clamp(150px, 1fr, 450px));
+    grid-template: 1fr 1fr / repeat(auto-fit, clamp(150px, 1fr, 450px));
     gap: 1rem;
 }
 
