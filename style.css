@@ -39,6 +39,12 @@
     width: 1.5rem;
 }
 
+#rabbit {
+    fill: #ff2a6d;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
 .container {
     height: 100vh;
 
@@ -85,7 +91,7 @@
     justify-content: flex-end;
     align-items: center;
     gap: 10px;
-    margin-left: 350px;
+    margin-left: 200px;
 }
 
 .header .search-bar input {
@@ -145,6 +151,7 @@
 .side-bar ul {
     background-color: var(--space-navy);
     padding: 10px;
+
     display: flex;
     flex: 1;
     flex-direction: column;
