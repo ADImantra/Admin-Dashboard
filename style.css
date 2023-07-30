@@ -29,14 +29,14 @@
 
 #bell {
     fill: #ff2a6d;
-    height: 10%;
-    width: 10%;
+    height: 1.5rem;
+    width: 1.5rem;
 }
 
 #mag-glass {
     fill: #ff2a6d;
-    height: 30%;
-    width: 30%;
+    height: 1.5rem;
+    width: 1.5rem;
 }
 
 .container {
@@ -57,6 +57,9 @@
 
     grid-column: 2/3;
     grid-row: 1/2;
+    
+    display: flex;
+    flex-direction: column;
 }
 
 .header .search-bar {
@@ -64,14 +67,25 @@
     padding: 10px;
 
     display: flex;
+
+}
+
+.header .search-bar .search-bar-left {
+    display: flex;
     flex: 1;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+
 }
 
 .header .search-bar .search-bar-right {
     display: flex;
-    justify-content: right;
+    flex: 1;
+    justify-content: flex-end;
     align-items: center;
+    gap: 10px;
+    margin-left: 350px;
 }
 
 .header .search-bar input {
@@ -131,6 +145,11 @@
 .side-bar ul {
     background-color: var(--space-navy);
     padding: 10px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 20px;
+
 }
 
 .dash-board {
@@ -174,7 +193,7 @@
     background-color: var(--space-navy);
     border: 1px solid var(--neon-red);
     color: var(--neon-blue);
-    padding: 30px;
+    padding: 1rem ;
     border-radius: 10px;
 
     font-family: "Quicknity";
@@ -182,19 +201,29 @@
 
     position: relative;
     
-    display: grid;
-    grid-template-rows: repeat(2, minmax(45px, 1fr));
-    justify-self: left;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+}
+
+.dash-board .dash-board-cards ul a .card p {
+    font-family: monospace;
 
 }
 
 .dash-board .nav-bar {
     background-color: var(--space-navy);;
+    font-family: "Glitch-Goblin";
     padding: 10px;
     
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     gap: 10px;
+}
+
+.dash-board .nav-bar p {
+    font-family: monospace;
 }
 
 .dash-board .nav-bar .announcements {
@@ -203,6 +232,24 @@
     border-radius: 10px;
     color: var(--neon-blue);
     padding: 10px;
+
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.dash-board .nav-bar .announcements ul li {
+    background-color: var(--space-navy);
+    border: 1px solid var(--neon-red);
+    border-radius: 10px;
+    color: var(--neon-blue);
+    padding: 10px;
+
+    margin: 1rem;
+    gap: 10px;
+
 }
 
 .dash-board .nav-bar .trending {
@@ -211,4 +258,20 @@
     color: var(--neon-blue);
     border-radius: 10px;
     padding: 10px;
+
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.dash-board .nav-bar .trending ul li {
+    background-color: var(--space-navy);
+    border: 1px solid var(--neon-red);
+    border-radius: 10px;
+    color: var(--neon-blue);
+    padding: 10px;
+
+    margin: 1rem;
 }
