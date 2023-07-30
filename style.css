@@ -1,0 +1,104 @@
+* {
+    list-style: none;
+    font-style: none;
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.header {
+    background-color: aquamarine;
+    padding: 10px;
+    grid-column: 2/3;
+}
+
+.header .search-bar {
+    background-color: blueviolet;
+    padding: 10px;
+
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.header .user-bar {
+    background-color: blanchedalmond;
+    padding: 10px;
+    
+    display: flex;
+    justify-content: space-around;
+}
+
+.header .user-bar ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.side-bar {
+    background-color: chartreuse;
+    padding: 10px;
+
+    display: grid;
+    grid-row: 1/3;
+    grid-template-rows: 1fr 4fr;
+    gap: 10px;
+}
+
+.side-bar .logo {
+    background-color: chartreuse;
+    padding: 10px;
+}
+
+.side-bar ul {
+    background-color: chartreuse;
+    padding: 10px;
+}
+
+.dash-board {
+    background-color: blue;
+    padding: 10px;
+
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 10px;
+}
+
+.dash-board .dash-board-cards {
+    background-color: orange;
+    padding: 10px;
+
+    display: grid;
+    grid-template: 1fr 1fr / repeat(auto-fit, minmax(120px, 1fr));
+}
+
+.dash-board ul .card {
+    background-color: lavenderblush;
+    padding: 10px;
+    margin: auto;
+}
+
+.dash-board .nav-bar {
+    background-color: blue;
+    padding: 10px;
+    
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.dash-board .nav-bar .announcements {
+    background-color: yellowgreen;
+    padding: 10px;
+}
+
+.dash-board .nav-bar .trending {
+    background-color: sienna;
+    padding: 10px;
+}
