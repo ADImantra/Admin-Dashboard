@@ -3,20 +3,23 @@
     font-style: none;
 
     margin: 0;
-    padding: 0;
 
     box-sizing: border-box;
 }
 
 .container {
+    height: 100vh;
+
     display: grid;
     grid-template-columns: 1fr 4fr;
+    grid-template-rows: 0.5fr 4fr;
 }
 
 .header {
     background-color: aquamarine;
     padding: 10px;
     grid-column: 2/3;
+    grid-row: 1/2;
 }
 
 .header .search-bar {
@@ -75,13 +78,22 @@
     padding: 10px;
 
     display: grid;
-    grid-template: 1fr 1fr / repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-rows: 1fr 5fr;
 }
 
-.dash-board ul .card {
-    background-color: lavenderblush;
+.dash-board .dash-board-cards ul {
+    background-color: orange;
     padding: 10px;
-    margin: auto;
+
+    grid-row: 2/3;
+    display: grid;
+    grid-template: 1fr 1fr / repeat(auto-fit, minmax(120px, 0.1fr));
+    gap: 70px;
+}
+
+.dash-board .dash-board-cards ul .card {
+    background-color: lavenderblush;
+    padding: 70px;
 }
 
 .dash-board .nav-bar {
